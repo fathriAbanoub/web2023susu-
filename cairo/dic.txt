@@ -1,0 +1,164 @@
+Document Type Declaration (DOCTYPE):
+
+html
+
+<!DOCTYPE html>
+
+    Explanation: This declaration defines the document type and version of HTML being used.
+    Possible Questions:
+        Why is the DOCTYPE declaration necessary in HTML?
+        Can you explain the purpose of specifying the document type?
+
+HTML Document Structure:
+
+html
+
+<html lang="ru">
+<head>
+    <!-- Meta tags and title -->
+</head>
+<body>
+    <!-- Page content -->
+</body>
+</html>
+
+    Explanation: This structure defines the HTML document with <html>, <head>, and <body> sections.
+    Possible Questions:
+        What is the role of the <head> section in an HTML document?
+        How does the lang attribute in the <html> tag affect the document?
+
+Meta Tags:
+
+html
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    Explanation: These meta tags define the character set and viewport settings for the document.
+    Possible Questions:
+        Why is the character set specified using the meta tag?
+        How does the viewport meta tag affect the display on different devices?
+
+Title Tag:
+
+html
+
+<title>Frontend Developer</title>
+
+    Explanation: Sets the title of the HTML document.
+    Possible Questions:
+        Why is the title important in an HTML document?
+        How does the title tag contribute to SEO?
+
+External Stylesheet Link:
+
+html
+
+<link rel="stylesheet" href="color.css">
+
+    Explanation: Links an external CSS stylesheet to style the HTML document.
+    Possible Questions:
+        What is the purpose of linking an external stylesheet?
+        How does the rel attribute in the link tag define the relationship?
+
+Header Section:
+
+html
+
+<header class="site-header">
+    <!-- Header content -->
+</header>
+
+    Explanation: Defines the header section of the webpage.
+    Possible Questions:
+        Why use the <header> tag for the site header?
+        What are the advantages of using semantic HTML tags like <header>?
+
+Navigation Links:
+
+html
+
+<nav class="main-nav">
+    <!-- Navigation links -->
+</nav>
+
+    Explanation: Contains navigation links.
+    Possible Questions:
+        Why use the <nav> tag for navigation links?
+        How can you improve accessibility for navigation links?
+
+Main Content Section:
+
+html
+
+<main class="content-section">
+    <!-- Main content -->
+</main>
+
+    Explanation: Contains the main content of the webpage.
+    Possible Questions:
+        What is the purpose of the <main> tag?
+        How does semantic HTML contribute to better document structure?
+
+Images:
+
+html
+
+    <img src="tin.jpeg" alt="Логотип">
+
+        Explanation: Embeds images in the document.
+        Possible Questions:
+            Why is the alt attribute important for images?
+            How can you optimize images for web performance?
+
+    Sections and Headings:
+
+html
+
+<section class="course-suitability">
+    <h2>Кому подойдет курс</h2>
+    <!-- Section content -->
+</section>
+
+    Explanation: Uses semantic tags for sections and headings.
+    Possible Questions:
+        Why use semantic tags like <section> and <h2>?
+        How does the choice of heading levels impact document structure?
+
+    Lists:
+
+html
+
+<ul>
+    <li>Вы студент или выпускник технических вузов</li>
+    <!-- List items -->
+</ul>
+
+    Explanation: Creates an unordered list.
+    Possible Questions:
+        When would you use an unordered list vs. an ordered list?
+        How can you style list items using CSS?
+
+    Buttons:
+
+html
+
+<button class="details-btn">Подробнее</button>
+
+    Explanation: Defines a button element.
+    Possible Questions:
+        What are the benefits of using a <button> tag over other elements for interactive elements?
+        How can you style buttons to improve user experience?
+
+    Footer:
+
+html
+
+<footer>
+    <!-- Footer content -->
+</footer>
+
+    Explanation: Contains footer information.
+    Possible Questions:
+        Why include a footer in a webpage?
+        What information is commonly placed in a website footer?
