@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To_Do</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/255px-Flag_of_Egypt.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="colores.css"> <!-- Link to the external CSS file for colors -->
+
+    <!-- Include jQuery library -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include custom JavaScript file -->
+    <script src="script.js"></script>
+</head>
+
+<body class="light-mode">
+    <!-- Toggle theme button -->
+    <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+
+    <!-- Main content section -->
+    <section>
+        <h1> To_Do</h1>
+
+        <!-- Form for adding/editing tasks -->
+        <form id="taskForm">
+            <!-- Input box for task title -->
+            <div class="inputbox">
+                <label for="title">Название:</label>
+                <input type="text" id="title" required />
+            </div>
+
+            <!-- Input box for task description -->
+            <div class="inputbox">
+                <label for="body">Описание:</label>
+                <input type="text" id="body" required />
+            </div>
+
+            <!-- Input box for user ID (1-10) -->
+            <div class="inputbox">
+                <label for="userId">ID пользователя (1-10):</label>
+                <input type="number" id="userId" min="1" max="10" required />
+            </div>
+
+            <!-- Checkbox for marking task as important -->
+            <div class="inputbox">
+                <label for="important">Важная:</label>
+                <input type="checkbox" id="important" />
+            </div>
+
+            <!-- Submit button for adding/editing tasks -->
+            <button type="submit">Добавить/Редактировать</button>
+
+            <!-- Display error message for user ID -->
+            <div class="error" id="userIdError"></div>
+        </form>
+
+        <!-- Container for displaying tasks -->
+        <div id="tasks"></div>
+
+        <!-- Loader element for indicating background task -->
+        <div id="loader" class="loader"></div>
+    </section>
+
+    <!-- Include custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

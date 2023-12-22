@@ -1,0 +1,231 @@
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Define root variables for background images */
+:root {
+    --day-background-image: url(https://cdnn21.img.ria.ru/images/07e4/0c/02/1587299968_0:0:2001:1125_1920x0_80_0_0_37a4aeaf420168fd27f99399e42e92c5.jpg);
+    --night-background-image: url(https://media-1obl-ru.storage.yandexcloud.net/resize_cache/667378/83132dad08c79bfbcc1d891fdcdbb658/iblock/467/467e191f182e4b7a4c5495aaf98b38fa.jpg);
+}
+
+/* Styling for the body element */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Light mode styling for the body */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #000;
+    background-image: var(--day-background-image);
+}
+
+/* Dark mode styling for the body */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    background-image: var(--night-background-image);
+}
+
+/* Styling for the main section */
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the heading */
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for input boxes */
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    max-width: 310px;
+}
+
+/* Styling for labels inside input boxes */
+.inputbox label {
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5px; /* Added space at the bottom */
+}
+
+/* Styling for input elements inside input boxes */
+.inputbox input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 10px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+/* Styling for the 'Forget' section */
+.forget {
+    margin: 20px 0;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Styling for labels inside the 'Forget' section */
+.forget label {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for input elements inside the 'Forget' section */
+.forget label input {
+    margin-right: 5px;
+}
+
+/* Styling for links inside the 'Forget' section */
+.forget a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hover styling for links inside the 'Forget' section */
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for buttons */
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-top: 15px;
+}
+
+/* Hover styling for buttons */
+button:hover {
+    background-color: rgba(7, 7, 7, 0.5);
+}
+
+/* Styling for the 'Register' section */
+.register {
+    font-size: 0.9rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for links inside the 'Register' section */
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Hover styling for links inside the 'Register' section */
+.register p a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the theme toggle button */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Styling for modal button (currently not displayed) */
+.modal-btn {
+    display: none;
+}
+
+/* Styling for general button styles */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Styling for buttons with hover effects */
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+/* Styling for buttons with hover effects */
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+/* Hover effects for buttons */
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+/* Focus styling for buttons */
+.btn-hover:focus {
+    outline: none;
+}
+
+/* Specific color styling for a button */
+.btn-hover.color-7 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+/* Styling to hide overflow of the body */
+body {
+    overflow: hidden;
+}
